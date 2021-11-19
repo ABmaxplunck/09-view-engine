@@ -1,0 +1,28 @@
+<%- include('../partials/head.ejs') %>
+ <%- include('../partials/nav.ejs') %>
+
+<h1><%= title %></h1>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nulla impedit
+  quae omnis recusandae tempora sit, ipsa perspiciatis odio sapiente inventore
+  quo suscipit incidunt eius veritatis molestiae aliquid rerum deserunt.
+</p>
+
+<%= new Date().toString() %>
+<!-- <% if(post.published) { %>
+    <h3>Title: <%= post.title %></h3>
+    <p>Body: <%= post.body %></p>
+
+    <%} else{ %>
+    <p>post is not published yet</p>
+
+    <% } %>  -->//have to write a loop
+<ul>
+  <% for (let p of posts) { %>
+
+  <li><%= p.title %> By <%= p.author %></li>
+
+  <% } %>
+</ul>
+
+<%- include('../partials/footer.ejs') %>
