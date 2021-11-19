@@ -19,6 +19,8 @@ let post={
 }
 
 //posts is an array
+//goooooooo
+
 let posts = [
     {title: 'Title one', author: 'ab'},
     {title: 'Title two', author: 'nda'},
